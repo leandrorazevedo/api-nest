@@ -1,0 +1,50 @@
+@baseUrl = https://localhost:3001
+@resource = products
+
+@endpoint = {{baseUrl}}/api/v1/{{resource}}
+
+@token = eyJhbGciOiJSUzI1NiIsImtpZCI6IjNlNTQyN2NkMzUxMDhiNDc2NjUyMDhlYTA0YjhjYTZjODZkMDljOTMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRG91Z2xhcyBSZXNlbmRlIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoWWdOeTZ6OXFTTXVwWG83TGh3M0paRGFpdmJtWFJ5VW4zT2Jzd2doWT1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9zaWFjcXVpeiIsImF1ZCI6InNpYWNxdWl6IiwiYXV0aF90aW1lIjoxNjA1ODk1MTIxLCJ1c2VyX2lkIjoielFOenNDT3pHYlM4cFpYMjFlaVlseEZWTzBVMiIsInN1YiI6InpRTnpzQ096R2JTOHBaWDIxZWlZbHhGVk8wVTIiLCJpYXQiOjE2MDU4OTUxMjEsImV4cCI6MTYwNTg5ODcyMSwiZW1haWwiOiJkb3VnbGFzcmVzZW5kZWJhdGlzdGFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDcwMTc3MDAyMTkzNjYyNjc4MDEiXSwiZW1haWwiOlsiZG91Z2xhc3Jlc2VuZGViYXRpc3RhQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.tf28eYHJOKTqyc5zM40x_Zf90clH7qmns_3NyD0ufuzg0YEoiQ5SK17bm2S-CCmaQAGK-0RNEk9guDAphIttLtldsznCRzADyMiyDYPuwrEZpNxAKpB_nO-YgheXlR5xXRLJPtFJbEJ6529yTu9eVgiuBvqJ2O7y2jEcCsTWENKFQzBhV-C0GtxAOhXZ95guYsqHqmpDaptYojQJUIi1pmAmwMrDaRvOnyRyfJroxhJ9WR9q4CW2P7z-YmF0qaMp29foOdh0rqqJxBLwB5j1zQdrgVoOeoe_Isd-zVI9z4zXTThv-D-ffgsb7yYAyfuZ5cOg6zQtTBsMARSSv16G4Q
+@token2 = eyJhbGciOiJSUzI1NiIsImtpZCI6IjNlNTQyN2NkMzUxMDhiNDc2NjUyMDhlYTA0YjhjYTZjODZkMDljOTMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiVmFsa2luZWxlcyBGLiBkZSBPbGl2ZWlyYSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaDNxZ1ZqLVB5RmxLNHUyd1dwRXVjUU1iek5XRHpLbFBuMlE0aFhJZz1zOTYtYyIsIm5pdmVsU2VuaGEiOjgsImdlcmVudGUiOnRydWUsInJvbGVzIjpbImFkbWluIiwiZmluYW5jZSJdLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc2lhY3F1aXoiLCJhdWQiOiJzaWFjcXVpeiIsImF1dGhfdGltZSI6MTYwNTg5ODk1NywidXNlcl9pZCI6ImdrTGZtYkdTb0RPbjJrSXZzVWFnVmNaeXZiQTMiLCJzdWIiOiJna0xmbWJHU29ET24ya0l2c1VhZ1ZjWnl2YkEzIiwiaWF0IjoxNjA1ODk4OTU3LCJleHAiOjE2MDU5MDI1NTcsImVtYWlsIjoidmFsa2luZWxlc0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNTM0NTY3NjgxMjkwMDA1NDQxOSJdLCJlbWFpbCI6WyJ2YWxraW5lbGVzQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.ty_QEJRnS-iNNeaF9R6x60-AX8X3YBgjndgs9CWQ3N4u337lH7OFiH2qHjSGu7NdiQKt5dpMDyt4tzxlGHtR-jJbcpFuUvhK8aLEaEAd5Abg_1QcX80x2fdhy0fVHWh8cTe6ZVe8uRb6U_rEnOEvUsA37McsMaIfISWrHMMMwROIASMKfYM2F3Af_ubBODnmwYFHkZbXviWHzXpPCt5Z5MLDPCVIVRqU9hR0-xSFtGEdNiUHe9F56L0sDXSZBLLvixa7pjfiS4deeH01fT_9aJwIZCvBfs2RQSEqe_mM-gFmQBcZpVF2azpJoOJf2Nz0q-u7m1VBlmgdjB3hqK_sHA
+
+
+POST {{endpoint}} HTTP/1.1
+Content-Type: application/json
+X-API-TIMESTAMP: {{$datetime iso8601}}
+
+{
+  "nome": "teste com mais caracteres - alterado ",
+  "marca": "não é uma zona",
+  "preco": 300,
+  "codigoOriginal": "sadflfjkdak"
+}
+
+### 
+
+GET {{endpoint}} HTTP/1.1
+Content-Type: application/json
+X-API-TIMESTAMP: {{$datetime iso8601}}
+
+
+###
+
+GET {{endpoint}}/5fb81eab047afa290d45810f HTTP/1.1
+Content-Type: application/json
+X-API-TIMESTAMP: {{$datetime iso8601}}
+
+###
+
+PUT {{endpoint}}/5fa5b17ad9d4da24abafd485 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nome": "teste",
+  "marca": "Tuto pane",
+  "preco": 100,
+  "codigoOriginal": "123456",
+  "__v": 1
+}
+
+###
+
+DELETE {{endpoint}}/5fa59ffd37b36821d3cd2a2d HTTP/1.1
+Content-Type: application/json
